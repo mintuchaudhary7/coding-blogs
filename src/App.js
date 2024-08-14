@@ -12,7 +12,7 @@ function App() {
     fetchBlogPosts();
   }, []);
   return (
-    <div className='w-full h-full flex flex-col gap-y-1 justify-center items-center'>
+    <div className='w-full h-full bg-[#7ec8e3] flex flex-col gap-y-1 justify-center items-center'>
       <Header />
       <Blogs />
       <Pagination />

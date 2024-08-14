@@ -4,7 +4,7 @@ import "./Spinner.css"
 function Spinner(){
     return(
         <div>
-            <div className="spinner"></div>
+            <div className="spinner min-h-screen"></div>
         </div>
     )
 }

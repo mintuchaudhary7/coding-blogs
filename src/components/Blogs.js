@@ -8,7 +8,7 @@ function Blogs() {
   console.log("printing inside blog component");
   console.log(posts);
   return (
-    <div className="w-11/12 max-w-[450px] h-full py-3 flex flex-col gap-y-7 my-[66px] justify-center items-center"> 
+    <div className="w-11/12 max-w-[450px]   h-full py-3 flex flex-col gap-y-7 my-[66px] justify-center items-center"> 
       {loading ? (
         <Spinner />
       ) : posts.length === 0 ? (
@@ -17,8 +17,8 @@ function Blogs() {
         </div>
       ) : (
         posts.map((post) => (
-          <div key={post.id}>
-            <p className="font-bold text-sm">{post.title}</p>
+          <div className="bg-white p-4 rounded-md hover:shadow-xl transform transition duration-500 hover:scale-105 cursor-pointer" key={post.id}>
+            <p className="font-bold text-sm ">{post.title}</p>
             <p className="text-xs">
               by <span className="italic">{post.author}</span> on <span className="underline font-bold">{post.category}</span>
             </p>
